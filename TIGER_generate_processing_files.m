@@ -11,7 +11,7 @@
 
 clear;clc
 
-genome_build = 'hg19'; % hg19, hg38, mm10, dm6   % other genomes can also be used- need genome sequence and gap file, and possibly code tweeks depending on chromosome naming convention
+genome_build = 'dm6'; % hg19, hg38, mm10, dm6   % other genomes can also be used- need genome sequence and gap file, and possibly code tweeks depending on chromosome naming convention
 read_length = 100; % should be no longer than the lengths of the reads in the sequencing data, but no need to make it longer than 100
 TIGER_folder = '/TIGER';  % ! change as appropriate
 
@@ -120,7 +120,7 @@ eval(['cd ' TIGER_folder])
 % this codes generates the alignability filter- list of coordinates that are not uniquely alignable
 clear;clc
 
-genome_build = 'hg19'; % hg19, hg38, mm10, dm6
+genome_build = 'dm6'; % hg19, hg38, mm10, dm6
 read_length = 100; 
 TIGER_folder = '/TIGER';  % ! change as appropriate
 
@@ -174,7 +174,7 @@ eval(['cd ' TIGER_folder])
 % smaller windows can be merged to larger ones (function "merge_windows") but not vice versa. Downside of using smaller windows is larger files, longer processing times and higher memory usage
 clear;clc
 
-genome_build = 'hg19'; % hg19, hg38, mm10, dm6
+genome_build = 'dm6'; % hg19, hg38, mm10, dm6
 read_length = 100; 
 win_size = 10000; % this will be the size of the windows in uniquely-alignable bps
 TIGER_folder = '/TIGER';  % ! change as appropriate
@@ -233,7 +233,7 @@ eval(['cd ' TIGER_folder])
 % Saves "Reads_expected_nominal"- number of bps in each GC bin in each read number window
 clear;clc
 
-genome_build = 'hg19'; % hg19, hg38, mm10, dm6
+genome_build = 'dm6'; % hg19, hg38, mm10, dm6
 read_length = 100;
 win_size = 10000; % only needed for the last part of the code
 TIGER_folder = '/TIGER';  % ! change as appropriate
@@ -325,7 +325,7 @@ eval(['cd ' TIGER_folder])
 % For processing files with non-default read number windows, can run just this (GC% coordinate files stay the same) 
 clear;clc
 
-genome_build = 'hg19'; % hg19, hg38, mm10, dm6
+genome_build = 'dm6'; % hg19, hg38, mm10, dm6
 read_length = 100;
 win_size = 10000; 
 TIGER_folder = '/TIGER';  % ! change as appropriate
